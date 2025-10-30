@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginbox {
+    width: 90%;
+    max-width: 320px;
+    padding: 50px 30px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 22px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.loginbox input[type="submit"] {
+    background: lightslategray;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.loginbox input[type="submit"]:hover {
+    background: lightskyblue;
+}
+
+.loginbox a {
+    color: lightslategray;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.loginbox a:hover {
+    color: dodgerblue;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+    .loginbox {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    .loginbox input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
